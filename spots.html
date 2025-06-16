@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spots to Visit</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px;
+      background-color: #8de263;
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 30px;
+    }
+
+    .spot {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .spot img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .spot p {
+      margin: 15px;
+      font-weight: bold;
+    }
+
+    .spot:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 600px) {
+      .spot {
+        width: 90%;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+     button {
+    border: none;
+    background-color:white
+    ;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: transparent;
+    border: 1px solid ;
+  
+  }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Spots To Visit</h1>
+  </header>
+
+  <section class="gallery">
+   
+     <div class="spot"><button><br>
+      <img src="nag.jpg" alt="Nagzira Wildlife">
+      
+      <p>Nagzira Wildlife Sanctuary, Sakoli</p></button>
+    </div>
+  
+
+    <div class="spot">
+      <button><br><img src="chand.webp" alt="Taj Mahal">
+      <p> Hanuman temple, Chandpur </p></button>
+    </div>
+
+    <div class="spot"><button><br>
+      <img src="r.jpg" alt="Gateway of India">
+      <p>Ravanwadi ,Bhandara</p></button>
+    </div>
+
+    <div class="spot"><button><br>
+      <img src="gose.jpeg" alt="Konkan Beach">
+      <p>Gose Dam, Maharashtra</p></button>
+    </div>
+    <div class="spot"><button><br>
+      <img src="koka.jpg" alt="Konkan Beach">
+      <p>Koka Safari,Mohadi</p></button>
+    </div>
+    <div class="spot"><button><br>
+      <img src="mataa.jpg" alt="Konkan Beach">
+      <p>Chaundeshwari Mata Mandir,Mohadi</p></button>
+    </div>
+    <div class="spot"><button><br>
+      <img src="aamba.webp" alt="Konkan Beach">
+      <p>Ambagad Fort</p></button>
+    </div>
+  </section>
+
+</body>
+</html>
